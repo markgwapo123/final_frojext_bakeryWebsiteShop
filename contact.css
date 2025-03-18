@@ -1,0 +1,23 @@
+*{
+    list-style: none;
+}
+.constainers{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#contacts,#FU{
+    text-align: center;
+}
+#fb,#ig{
+    width: 22px;
+    height: 22px;
+    margin-right: 15px;
+}
+#twitter{
+    width: 25px;
+    height: 20px;
+    margin-right: 10px;
+}

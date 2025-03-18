@@ -1,0 +1,79 @@
+.imgcake {
+  position: relative;
+  left: 50%;
+  transform: translate(10px, 29px);
+}
+.cakeflavor {
+  position: absolute;
+  right: 60%;
+  top: 20%;
+  font-size: 30px;
+  transform: translate(10px, 10px);
+}
+.cake1,
+.cake2,
+.cake3 {
+  border-radius: 15px;
+  margin: 10px;
+}
+
+@media (max-width: 480px) {
+  .imgcake {
+    position: relative;
+    left: 0%;
+    transform: translate(10px, 29px);
+  }
+  .cake1,
+  .cake2,
+  .cake3 {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    border-radius: 15px;
+    margin: 10px;
+    position: relative;
+    left: 58%;
+  }
+  .cakeflavor {
+    position: absolute;
+    right: 50%;
+    top: 15%;
+    font-size: 20px;
+    transform: translate(10px, 12px);
+}
+h1.cakes, h1.cookies, h1.bread {
+    font-family: "Arizonia", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 41px;
+    color: #5c4520;
+}
+.titles p {
+    color: #251c13;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+}
+a.class, a.gour, a.sea {
+    font-size: 21px;
+}
+}
+  @media only screen and (max-width: 375px) {
+    .cakeflavor {
+        position: absolute;
+        right: 56%;
+        top: 20%;
+        font-size: 20px;
+        transform: translate(10px, 12px);
+    }
+
+    .titles p {
+        color: #251c13;
+        font-size: 15px;
+        font-weight: 500;
+        text-align: center;
+        padding: 10px;
+    }
+   
+  }

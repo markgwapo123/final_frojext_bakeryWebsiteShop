@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("img/loginbg.jfif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(2px);
+  z-index: -1;
+}
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+#signin-form {
+  text-align: center;
+  background-color: transparent;
+  box-shadow: 0px 0px 20px 10px rgba(248, 216, 174, 0.5) inset;
+  padding: 25px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+#title {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: x-large;
+  font-family: Tahoma, sans-serif;
+}
+#tits {
+  color: rgb(233, 231, 228);
+  font-size: 22px;
+  border-bottom: solid 1px white;
+  padding-bottom: 20px;
+  font-family: Tahoma, sans-serif;
+}
+
+input {
+  padding: 10px 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  flex: 1 1 calc(50% - 10px);
+  background-color: transparent;
+  color: white;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+#username {
+  background-image: url("img/loginicon.png");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 20px 20px;
+}
+
+#password {
+  background-image: url("img/passicon.png");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 20px 20px;
+}
+
+#signup-form {
+  display: none;
+  text-align: center;
+  background-color: #ac9889;
+  box-shadow: 0px 0px 15px 5px rgba(248, 216, 174, 0.5) inset;
+  padding: 25px;
+  border-radius: 10px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.form-row input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button {
+  width: 80%;
+  padding: 10px;
+  background-image: linear-gradient(to right, #a98162, #8c6c51, #433327);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+button:hover {
+  box-shadow: 0px 0px 20px 5px rgba(241, 239, 239, 0.5);
+  font-size: medium;
+  transition: all 0.2s;
+}
+.sp,
+a {
+  color: rgb(218, 209, 209);
+  font-family: verdana;
+  font-size: small;
+}
+a:hover {
+  text-decoration: underline;
+}
+.cart {
+  display: none; /* Initially hidden */
+}
+
+.cart.show {
+  display: block; /* Show cart when needed */
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="sign-up.css" />
+  </head>
+  <body>
+    <div class="container">
+      <p id="tits">
+        Hungry for Fresh Pastries? Sign Up and Get the First Taste!
+      </p>
+
+      <div id="signup-form">
+        <p id="title">CREATE AN ACCOUNT</p>
+        <br />
+        <form action="signup.php" method="post">
+          <div class="form-row">
+            <input
+              type="text"
+              name="cust_fname"
+              placeholder="First Name"
+              required
+              autofocus
+            />
+            <input
+              type="text"
+              name="cust_lname"
+              placeholder="Last Name"
+              required
+            />
+            <input
+              type="email"
+              name="signup-email"
+              placeholder="Email"
+              required
+            />
+            <input
+              type="text"
+              name="phone_number"
+              placeholder="Phone Number"
+              required
+            />
+            <input
+              type="text"
+              name="cust_brgy"
+              placeholder="Barangay"
+              required
+            />
+            <input type="text" name="cust_city" placeholder="City" required />
+            <input
+              type="text"
+              name="cust_province"
+              placeholder="Province"
+              required
+            />
+            <input
+              type="text"
+              name="signup-username"
+              placeholder="Username"
+              required
+            />
+            <input
+              type="password"
+              name="signup-password"
+              placeholder="Password"
+              required
+            />
+            <input
+              type="password"
+              name="signup-confirm-password"
+              placeholder="Confirm Password"
+              required
+            />
+          </div>
+          <button type="submit" class="submitbtn">Sign Up</button>
+        </form>
+        <br />
+        <p class="sp">
+          Already have an account? <a href="sign_in.php" id="switchToSignIn">Sign In</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
